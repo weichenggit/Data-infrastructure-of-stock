@@ -8,7 +8,7 @@ docker images
 docker ps
 ```
 
-# ![](/assets/cassandra1.jpeg)
+# ![](/picture/cassandra1.jpeg)
 
 # 2. Get Cassandra CLI
 
@@ -23,21 +23,22 @@ rm apache-cassandra-3.11.1-bin.tar.gz
 
 ```
 
-![](/assets/cassandra2.jpeg)
+![](/picture/cassandra2.jpeg)
 
 # 3. Create keyspace 
 
 ```
 ./cqlsh localhost 9042
 
-CREATE KEYSPACE "bittiger" WITH replication = {'class': 'SimpleStrategy', 'replication_factor':1} AND durable_writes = 'true';
+CREATE KEYSPACE "bittiger" WITH replication = {'class': 'SimpleStrategy', 'replication_factor':
+1} AND durable_writes = 'true';
 
 USE bittiger;
 
 DESCRIBE KEYSPACE;
 ```
 
-![](/assets/cassandra3.jpeg)
+![](/picture/cassandra3.jpeg)
 
 # 4. Create table
 
@@ -49,7 +50,7 @@ CREATE TABLE user ( first_name text, last_name text, PRIMARY KEY (first_name));
 DESCRIBE TABLE user;
 ```
 
-![](/assets/cassandra4.jpeg)
+![](/picture/cassandra4.jpeg)
 
 # 5. Insert data
 
@@ -70,7 +71,7 @@ SELECT COUNT (*) FROM USER;
 SELECT * FROM USER;
 ```
 
-![](/assets/cassandra5.jpeg)
+![](/picture/cassandra5.jpeg)
 
 
 
@@ -78,7 +79,7 @@ SELECT * FROM USER;
 SELECT * FROM user WHERE first_name='uncle';
 ```
 
-![](/assets/cassandra6.jpeg)
+![](/picture/cassandra6.jpeg)
 
 ```
 SELECT * FROM user WHERE last_name='barney';
@@ -86,7 +87,7 @@ SELECT * FROM user WHERE last_name='barney';
 SELECT * FROM user WHERE last_name='barney' allow filtering;
 ```
 
-![](/assets/cassandra7.jpeg)
+![](/picture/cassandra7.jpeg)
 
 # 7. Look Into Cassandra Node
 
@@ -108,9 +109,9 @@ nodetool flush
 ls
 ```
 
-![](/assets/cassandra9.jpeg)
+![](/picture/cassandra9.jpeg)
 
-![](/assets/cassandra10.jpeg)
+![](/picture/cassandra10.jpeg)
 
 # 8. Delete data
 
@@ -122,7 +123,7 @@ DELETE last_name FROM user WHERE first_name='uncle';
 DELETE FROM user WHERE first_name='uncle';
 ```
 
-![](/assets/cassandra11.jpeg)
+![](/picture/cassandra11.jpeg)
 
 # 9. Remove table
 
@@ -138,5 +139,5 @@ DROP TABLE user;
 SELECT * FROM user;
 ```
 
-![](/assets/cassandra12.jpeg)
+![](/picture/cassandra12.jpeg)
 
