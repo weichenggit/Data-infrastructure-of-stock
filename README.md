@@ -14,11 +14,11 @@ Build a platform to analysis real-time stock data crawlered from internet
 
 # Project Architecture
 
-![](/assets/architecture.jpeg)
+![](/picture/architecture.jpeg)
 
 # Web UI:
 
-![](/assets/stock-visualization.jpeg)
+![](/picture/stock-visualization.jpeg)
 
 # Send data to Kafka Broker : data-producer.py
 
@@ -135,5 +135,5 @@ If your all your application run in a docker-machine named bigdata, and the ip o
 node index.js --redis_host=localhost --redis_port=6379 --redis_channel=stock-price
 ```
 
-![](/assets/nodejs.jpeg)
+![](/picture/nodejs.jpeg)
 
