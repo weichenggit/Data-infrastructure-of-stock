@@ -12,7 +12,7 @@ mv spark-2.0.0-bin-hadoop2.7 spark
 rm spark-2.0.0-bin-hadoop2.7.tgz
 ```
 
-![](/assets/spark1.jpeg)
+![](/picture/spark1.jpeg)
 
 ```
 Spark-shell
@@ -22,7 +22,7 @@ pyspark
 http://localhost:4040
 ```
 
-# ![](/assets/spark2.jpeg)![](/assets/spark3.jpeg)
+# ![](/picture/spark2.jpeg)![](/picture/spark3.jpeg)
 
 # 2. Start Cassandra Server
 
@@ -52,7 +52,7 @@ counts.count()
 counts.collect()
 ```
 
-# ![](/assets/spark5.jpeg)
+# ![](/picture/spark5.jpeg)
 
 # 4. Try Some Analytics of Your Own
 
@@ -66,7 +66,7 @@ array1.union(array2).collect()
 array1.intersection(array2).collect()
 ```
 
-# ![](/assets/spark6.png)
+# ![](/picture/spark6.png)
 
 ```
 array3 = array1.union(array2)
@@ -80,9 +80,9 @@ array3.collect()
 array3.filter(lambda x:x%2 == 1).collect()
 ```
 
-![](/assets/spark7.jpeg)
+![](/picture/spark7.jpeg)
 
-![](/assets/spark8.png)
+![](/picture/spark8.png)
 
 
 
@@ -98,7 +98,7 @@ result=rdd.groupBy(lambda x:x%2).collect()
 sorted([(x,sorted(y))for(x,y)in result])
 ```
 
-![](/assets/spark9.jpeg)
+![](/picture/spark9.jpeg)
 
 ```
 m = sc.parallelize([(1, 2), (3, 4),(5,6),(4, 2)]).keys()
@@ -110,7 +110,7 @@ n = sc.parallelize([(1, 2), (3, 4),(5,6),(4, 2)]).values()
 n.collect()
 ```
 
-![](/assets/spark11.png)
+![](/picture/spark11.png)
 
 ```
 rdd = sc.parallelize([1, -2, 0, 9, -5, 3,2])
@@ -124,7 +124,7 @@ result.min()
 result.max()
 ```
 
-![](/assets/spark10.jpeg)
+![](/picture/spark10.jpeg)
 
 
 
