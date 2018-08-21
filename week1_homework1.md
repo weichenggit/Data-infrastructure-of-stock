@@ -8,13 +8,13 @@ docker images
 docker ps
 ```
 
-![](/assets/1.jpeg)
+![](/picture/1.jpeg)
 
 ```
 Go to http://localhost:3000 in browser
 ```
 
-![](/assets/2.jpeg)
+![](/picture/2.jpeg)
 
 # 2. Start Zookeeper Server
 
@@ -26,7 +26,7 @@ docker images
 docker ps
 ```
 
-![](/assets/3.jpeg)
+![](/picture/3.jpeg)
 
 **Get Zookeeper CLI:**
 
@@ -38,13 +38,13 @@ mv zookeeper-3.4.8 zookeeper
 
 rm zookeeper-3.4.8.tar.gz
 
-![](/assets/5.jpeg)
+![](/picture/5.jpeg)
 
 cd zookeeper/bin
 
 ./zkCli.sh -server localhost:2181
 
-![](/assets/7.jpeg)
+![](/picture/7.jpeg)
 
 **Browse Znode Data：**
 
@@ -56,7 +56,7 @@ ls /zookeeper
 get /zookeeper/quota
 ```
 
-![](/assets/zookeeper1.jpeg)
+![](/picture/zookeeper1.jpeg)
 
 **Create Znode Data:**
 
@@ -70,7 +70,7 @@ ls /workers
 get /workers
 ```
 
-![](/assets/zookeeper2.jpeg)
+![](/picture/zookeeper2.jpeg)
 
 **Delete Znode Data:**
 
@@ -84,7 +84,7 @@ ls /workers
 get /workers
 ```
 
-![](/assets/zookeeper3.jpeg)
+![](/picture/zookeeper3.jpeg)
 
 **Create Ephemeral Znode Data:**
 
@@ -98,7 +98,7 @@ ls /workers
 get /workers
 ```
 
-![](/assets/zookeeper4.jpeg)
+![](/picture/zookeeper4.jpeg)
 
 **Watcher:**
 
@@ -106,7 +106,7 @@ get /workers
 get /workers true
 ```
 
-![](/assets/zookeeper5.jpeg)
+![](/picture/zookeeper5.jpeg)
 
 # 
 
@@ -124,7 +124,7 @@ python --version
 pip --version
 ```
 
-![](/assets/kafkanew.jpeg)
+![](/picture/kafkanew.jpeg)
 
 **Start Kafka Server:**
 
@@ -136,7 +136,7 @@ docker images
 docker ps
 ```
 
-![](/assets/kafka2.jpeg)
+![](/picture/kafka2.jpeg)
 
 **Get Kafka CLI:**
 
@@ -150,7 +150,7 @@ mv kafka\_2.11-0.10.0.1 kafka
 rm kafka\_2.11-0.10.0.1.tgz
 ```
 
-![](/assets/kafka3.jpeg)
+![](/picture/kafka3.jpeg)
 
 **Create Kafka Topic:**
 
@@ -160,7 +160,7 @@ rm kafka\_2.11-0.10.0.1.tgz
 ./kafka-topics.sh --list --zookeeper localhost:2181
 ```
 
-![](/assets/kafka5.jpeg)
+![](/picture/kafka5.jpeg)
 
 **Produce Messages:**
 
@@ -176,7 +176,7 @@ rm kafka\_2.11-0.10.0.1.tgz
 
 ./kafka-console-consumer.sh --zookeeper localhost:2181 --topic bigdata --from-beginning
 
-![](/assets/kafka7.jpeg)
+![](/picture/kafka7.jpeg)
 
 **Look Into Kafka Broker:**
 
@@ -188,7 +188,7 @@ cd /var/lib/kafka
 ls
 ```
 
-![](/assets/kafka8.jpeg)
+![](/picture/kafka8.jpeg)
 
 # 
 
